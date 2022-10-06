@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+    background: url(pic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form_container{
+    width: 360px;
+    height: 400px;
+    background: rgba(219, 216, 216, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBar_conatiner{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid red;
+    display: flex;
+    position: relative;
+}
+
+.progressBar_conatiner h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.progressbar{
+    width: 120px ;
+    height: 100%;
+    background:linear-gradient(45deg,white,red);
+    position: absolute;
+}
+
+.progressbar::after{
+    content: ' ';
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid red;
+    position: absolute;
+    right: -15px;
+}
+
+.form{
+    margin-top: 30px;
+    width: 360px;
+}
+
+.form .form_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input_box{
+    width: 100%;
+    padding: 10px;
+}
+
+.input_box input{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    padding: 0px 10px ;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.btn input{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    background: linear-gradient(45deg, red,gray);
+}
+
+.form_info{
+    position: relative;
+   
+}
+
+.form1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.form2{
+    position: absolute;
+    top: 0;
+    left: 480px;
+    transition: 1s;
+}
+
+.form3{
+    position: absolute;
+    top: 0;
+    left: 480px;
+    transition: 1s;
+}
